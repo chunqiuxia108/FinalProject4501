@@ -28,3 +28,30 @@ CREATE TABLE trees (
 
 
 
+
+CREATE TABLE zipcodes (
+	id INTEGER NOT NULL, 
+	zipcode INTEGER, 
+	area VARCHAR, 
+	state VARCHAR, 
+	county VARCHAR, 
+	geometry geometry(POLYGON,-1), 
+	PRIMARY KEY (id)
+)
+
+
+
+
+CREATE TABLE zillows (
+	id INTEGER NOT NULL, 
+	zipcode INTEGER, 
+	city VARCHAR, 
+	county VARCHAR, 
+	date_2023_08_31 FLOAT, 
+	date_2023_01_31 FLOAT, 
+	date_2023_09_30 FLOAT, 
+	PRIMARY KEY (id)
+)
+
+
+
