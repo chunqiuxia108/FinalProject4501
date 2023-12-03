@@ -1,0 +1,8 @@
+pip install geoalchemy2
+pip install geopandas
+pip install matplotlib
+pip install pandas
+pip install requests
+pip install shapely
+pip install sqlalchemy
+pip install psycopg2
