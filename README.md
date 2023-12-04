@@ -10,8 +10,8 @@ When your apartment lease is ending, finding a new place can be a daunting task.
 
 This project leverages the following datasets:
 
-1. Shapefiles of NYC’s zip codes with geometric boundary data.
-2. Historical monthly average rents by zip code from Zillow.
+1. NYC’s zip codes with geometric boundary data.
+2. Historical monthly average rents by zip code.
 3. Historical data from NYC Open Data on 311 complaints and the 2015 tree census.
 
 ## Tools Used
