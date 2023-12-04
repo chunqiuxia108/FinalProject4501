@@ -1,1 +1,26 @@
+# Data files
+data/*.geojson
+data/*.dbf
+data/*.prj
+data/*.sbn
+data/*.sbx
+data/*.shp
+data/*.shp.xml
+data/*.shx
+data/*.csv
 
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+*.sqlite
+*.sqlite3
+*.db
+*.db3
