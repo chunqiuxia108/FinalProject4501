@@ -1,12 +1,20 @@
 
-    SELECT zipcode, date_2023_09_30 AS rent
-    FROM zillows;
+    SELECT zipcode, AVG(rent) as average_rent
+    FROM 
+        zillows
+    WHERE 
+        date >= '2023-09-01' AND date < '2023-10-01'
+    GROUP BY zipcode;
     
 
 
-    SELECT zipcode, COUNT(*) AS num_complaints
-    FROM three_11s
-    WHERE created_date >= '2022-10-01' AND created_date <= '2023-09-30'
+    SELECT zipcode, COUNT(*) as complaints_count
+    FROM 
+        three_11s
+    WHERE 
+        created_date >= '2022-10-01' 
+        AND 
+        created_date <= '2023-09-30'
     GROUP BY zipcode;
-
+    
 

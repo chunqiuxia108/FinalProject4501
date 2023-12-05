@@ -47,9 +47,8 @@ CREATE TABLE zillows (
 	zipcode INTEGER, 
 	city VARCHAR, 
 	county VARCHAR, 
-	date_2023_08_31 FLOAT, 
-	date_2023_01_31 FLOAT, 
-	date_2023_09_30 FLOAT, 
+	date DATE, 
+	rent FLOAT, 
 	PRIMARY KEY (id)
 )
 
