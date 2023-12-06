@@ -1,20 +1,20 @@
 
 CREATE TABLE three_11s (
-	id INTEGER NOT NULL, 
+	complaint_id INTEGER NOT NULL, 
 	zipcode INTEGER, 
 	latitude FLOAT, 
 	longitude FLOAT, 
 	created_date DATETIME, 
 	geometry geometry(POINT,-1), 
 	complaint_type VARCHAR, 
-	PRIMARY KEY (id)
+	PRIMARY KEY (complaint_id)
 )
 
 
 
 
 CREATE TABLE trees (
-	id INTEGER NOT NULL, 
+	treedata_id INTEGER NOT NULL, 
 	tree_id VARCHAR, 
 	zipcode INTEGER, 
 	latitude FLOAT, 
@@ -23,33 +23,32 @@ CREATE TABLE trees (
 	health VARCHAR, 
 	spc_common VARCHAR, 
 	geometry geometry(POINT,-1), 
-	PRIMARY KEY (id)
+	PRIMARY KEY (treedata_id)
 )
 
 
 
 
 CREATE TABLE zipcodes (
-	id INTEGER NOT NULL, 
-	zipcode INTEGER, 
+	zipcode INTEGER NOT NULL, 
 	area VARCHAR, 
 	state VARCHAR, 
 	county VARCHAR, 
 	geometry geometry(POLYGON,-1), 
-	PRIMARY KEY (id)
+	PRIMARY KEY (zipcode)
 )
 
 
 
 
 CREATE TABLE zillows (
-	id INTEGER NOT NULL, 
+	rent_id INTEGER NOT NULL, 
 	zipcode INTEGER, 
 	city VARCHAR, 
 	county VARCHAR, 
 	date DATE, 
 	rent FLOAT, 
-	PRIMARY KEY (id)
+	PRIMARY KEY (rent_id)
 )
 
 
