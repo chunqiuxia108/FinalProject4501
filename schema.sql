@@ -5,7 +5,7 @@ CREATE TABLE three_11s (
 	latitude FLOAT, 
 	longitude FLOAT, 
 	created_date DATETIME, 
-	geometry geometry(POINT,-1), 
+	geometry geometry(POINT,4326), 
 	complaint_type VARCHAR, 
 	PRIMARY KEY (complaint_id)
 )
@@ -22,7 +22,7 @@ CREATE TABLE trees (
 	status VARCHAR, 
 	health VARCHAR, 
 	spc_common VARCHAR, 
-	geometry geometry(POINT,-1), 
+	geometry geometry(POINT,4326), 
 	PRIMARY KEY (treedata_id)
 )
 
@@ -34,7 +34,7 @@ CREATE TABLE zipcodes (
 	area VARCHAR, 
 	state VARCHAR, 
 	county VARCHAR, 
-	geometry geometry(POLYGON,-1), 
+	geometry geometry(POINT,4326), 
 	PRIMARY KEY (zipcode)
 )
 
