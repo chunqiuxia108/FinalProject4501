@@ -21,7 +21,7 @@ ComplaintCount AS (
     FROM 
         three_11s
     WHERE 
-        created_date >= '2022-01-01' AND created_date <= '2023-01-31'
+        created_date >= '2023-01-01' AND created_date <= '2023-01-31'
     GROUP BY 
         zipcode
 ),
